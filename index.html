@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Celular Blindado — Mãe, não clica nesse link</title>
+<meta name="description" content="Guia em PDF para proteger o celular do seu pai ou da sua mãe dos golpes do dia a dia: Pix falso, boleto adulterado, link no WhatsApp e ligação de falso banco. R$ 14,90.">
+<meta property="og:title" content="Celular Blindado — Mãe, não clica nesse link">
+<meta property="og:description" content="Guia em PDF, 37 páginas, passo a passo por marca. Proteja o celular do seu pai antes do próximo golpe.">
+<meta property="og:image" content="img/capa-livro.jpg">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --tinta:#0e1311;
+    --tinta2:#131a17;
+    --papel:#f7f5f0;
+    --linha:#e2ded4;
+    --cinza:#5f6b63;
+    --verde:#0f7a4f;
+    --verde-esc:#0a5a3a;
+    --amarelo:#ffd83d;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--papel);
+    color:var(--tinta);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:18px;
+    line-height:1.6;
+  }
+  .wrap{max-width:700px;margin:0 auto;padding:0 20px}
+  section.wrap{padding:38px 20px}
+  section.wrap+section.wrap{padding-top:0}
+  h1,h2,h3{line-height:1.2;margin:0 0 14px;letter-spacing:-.01em}
+  h1{font-size:2rem}
+  h2{font-size:1.45rem;margin:0 0 14px}
+  h3{font-size:1.1rem;margin-top:22px}
+  p{margin:0 0 14px}
+  strong{font-weight:700}
+  .destaque{background:linear-gradient(transparent 62%, var(--amarelo) 62%);padding:0 2px}
+
+  /* herói */
+  .hero{
+    background:var(--tinta);
+    color:#fff;
+    padding:34px 0 40px;
+  }
+  .hero h1{color:#fff;font-size:2.05rem}
+  .hero .selo{
+    display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--amarelo);font-weight:700;margin-bottom:14px
+  }
+  .hero p{color:#d6dcd8}
+  .hero .capa{
+    width:100%;max-width:300px;display:block;border-radius:8px;
+    margin:26px auto 0;box-shadow:0 18px 44px rgba(0,0,0,.55);
+  }
+  .btn{
+    display:block;text-align:center;text-decoration:none;
+    background:var(--verde);color:#fff;font-weight:700;font-size:1.05rem;
+    padding:17px 20px;border-radius:10px;border:2px solid var(--verde);
+    box-shadow:0 6px 0 var(--verde-esc);
+    transition:transform .08s ease;
+  }
+  .btn:active{transform:translateY(3px);box-shadow:0 3px 0 var(--verde-esc)}
+  .btn.claro{background:var(--amarelo);color:var(--tinta);border-color:var(--amarelo);box-shadow:0 6px 0 #c9a800}
+  .btn.secundario{background:transparent;color:var(--tinta);border:2px solid var(--tinta);box-shadow:none}
+  .hero .btn{margin-top:26px}
+  .preco-linha{font-size:.95rem;color:#a9b3ad;text-align:center;margin-top:12px}
+
+  /* blocos */
+  .cartao{
+    background:#fff;border:1px solid var(--linha);border-radius:12px;
+    padding:22px;margin:0 0 16px;
+  }
+  .lista{list-style:none;padding:0;margin:0 0 8px}
+  .lista li{position:relative;padding-left:30px;margin-bottom:11px}
+  .lista li:before{
+    content:"";position:absolute;left:0;top:.42em;
+    width:16px;height:9px;border-left:3px solid var(--verde);border-bottom:3px solid var(--verde);
+    transform:rotate(-45deg);
+  }
+  .lista.x li:before{
+    border:0;width:14px;height:3px;background:#b9b3a6;transform:none;top:.72em;left:1px;
+  }
+  .valor{
+    display:flex;align-items:baseline;gap:0;justify-content:center;margin:6px 0 2px;
+  }
+  .valor .de{color:var(--cinza);text-decoration:line-through;font-size:1.05rem;margin-right:16px;white-space:nowrap}
+  .valor .por{font-size:2.4rem;font-weight:800;letter-spacing:-.02em}
+  .valor .centavos{font-size:1.1rem;font-weight:700}
+  .cinza{color:var(--cinza)}
+  .mini{font-size:.92rem}
+  .centro{text-align:center}
+
+  /* páginas do livro */
+  .paginas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  .paginas img{width:100%;display:block;border-radius:8px;border:1px solid var(--linha)}
+  .paginas figure{margin:0}
+  .paginas figcaption{font-size:.8rem;color:var(--cinza);margin-top:6px}
+
+  /* amostra */
+  .amostra{background:#fff;border:2px dashed var(--linha);border-radius:12px;padding:22px;text-align:center}
+
+  /* faq */
+  details{
+    background:#fff;border:1px solid var(--linha);border-radius:10px;
+    padding:16px 18px;margin-bottom:10px;
+  }
+  details summary{
+    cursor:pointer;font-weight:700;list-style:none;position:relative;padding-right:26px;
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary:after{
+    content:"+";position:absolute;right:0;top:-2px;font-size:1.35rem;color:var(--verde);font-weight:700;
+  }
+  details[open] summary:after{content:"–"}
+  details p{margin:12px 0 0;color:#2c3631}
+
+  /* garantia */
+  .garantia{
+    background:var(--tinta2);color:#e9edeb;border-radius:12px;padding:26px 24px;text-align:center;margin-bottom:10px;
+  }
+  .garantia h2{color:#fff;font-size:1.25rem}
+  .garantia p{color:#c3ccc7;margin-bottom:0}
+
+  /* rodapé */
+  footer{
+    background:var(--tinta);color:#8e9a94;font-size:.85rem;padding:28px 0 40px;
+  }
+  footer p{margin:0 0 8px}
+  footer a{color:#c3ccc7}
+
+  /* barra fixa */
+  .barra{
+    position:sticky;bottom:0;z-index:9;
+    background:rgba(247,245,240,.96);border-top:1px solid var(--linha);
+    padding:10px 20px 14px;backdrop-filter:blur(6px);
+  }
+  .barra .btn{font-size:1rem;padding:15px 18px}
+  .barra .rotulo{font-size:.76rem;text-align:center;color:var(--cinza);margin-bottom:7px}
+
+  @media (min-width:640px){
+    h1{font-size:2.6rem}
+    .hero h1{font-size:2.9rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="selo">Guia em PDF · 37 páginas</span>
+    <h1>Mãe, não clica nesse link</h1>
+    <p>Seu pai atende o telefone, escuta “é do banco”, e em dez minutos perdeu o dinheiro da aposentadoria. O golpe não é esperto: ele é rápido, e a vítima está sozinha na hora.</p>
+    <p>Este guia é para <strong>você</strong> fazer a configuração certa no celular deles e ensinar o que fazer quando o telefone tocar. Sem trocar de aparelho. Sem instalar programa nenhum.</p>
+    <img class="capa" src="img/capa-livro.jpg" alt="Capa do guia Celular Blindado — Mãe, não clica nesse link" width="300" height="450">
+    <a class="btn claro" href="https://pay.kiwify.com.br/b4lyF2h">Quero o guia por R$ 14,90</a>
+    <p class="preco-linha">Pagamento único · Pix, boleto ou cartão · 7 dias de garantia</p>
+  </div>
+</header>
+
+<section class="wrap">
+  <h2>O que tem dentro</h2>
+  <ul class="lista">
+    <li><strong>14 capítulos</strong>, cada um com uma parte para ler e uma parte “Faça agora”.</li>
+    <li><strong>Passo a passo por marca</strong>, começando pelo <strong>Samsung</strong> — com o caminho do Motorola, Xiaomi e iPhone.</li>
+    <li>Como <strong>trancar o celular do jeito certo</strong> (e por que o PIN de quatro números é pouco).</li>
+    <li><strong>WhatsApp blindado</strong>: confirmação em duas etapas e o que fazer se alguém pedir o código.</li>
+    <li><strong>Pix, boleto e o golpe do dinheiro</strong>: o que é reversível, o que não é, e as primeiras duas horas depois de cair no golpe.</li>
+    <li><strong>Voz clonada por inteligência artificial</strong>: a palavra-código de família que resolve esse golpe para sempre.</li>
+    <li><strong>Acesso remoto</strong>: como o golpista “entra” no celular e o único ajuste que fecha essa porta.</li>
+    <li><strong>Os 12 golpes mais comuns em uma linha cada</strong> — para imprimir e colar na geladeira.</li>
+    <li><strong>Checklist de 10 minutos por mês</strong>: o que faz o guia continuar valendo depois da primeira leitura.</li>
+  </ul>
+
+  <div class="paginas">
+    <figure><img src="img/cap-01.jpg" alt="Página do capítulo 1" loading="lazy"><figcaption>Capítulo 1 — o começo</figcaption></figure>
+    <figure><img src="img/cap-03.jpg" alt="Página do guia" loading="lazy"><figcaption>Trancar o celular</figcaption></figure>
+    <figure><img src="img/cap-05.jpg" alt="Página do guia" loading="lazy"><figcaption>Pix e boleto</figcaption></figure>
+    <figure><img src="img/cap-11.jpg" alt="Página do guia" loading="lazy"><figcaption>Voz clonada</figcaption></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Para quem é</h2>
+  <div class="cartao">
+    <ul class="lista" style="margin-bottom:0">
+      <li>Para quem vai comprar <strong>para o pai, a mãe ou os avós</strong> e quer entregar algo pronto, não uma aula.</li>
+      <li>Para quem já tentou explicar por telefone e viu que não adiantou.</li>
+      <li>Para quem usa Samsung e quer o passo exato do menu, com o nome do botão.</li>
+    </ul>
+  </div>
+
+  <h3>Para quem não é</h3>
+  <div class="cartao">
+    <ul class="lista x" style="margin-bottom:0">
+      <li>Não é para quem quer aprender a programar ou segurança de empresa.</li>
+      <li>Não é curso em vídeo: é guia escrito, para consultar na hora da dúvida.</li>
+      <li>Não substitui o banco nem a polícia no caso de golpe já consumado — o guia diz exatamente a quem ligar, e nessa ordem.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="amostra">
+    <h2 style="font-size:1.2rem">Leia antes de comprar</h2>
+    <p class="mini cinza">As primeiras 7 páginas, com o capítulo 1 inteiro. Sem cadastro, sem e-mail.</p>
+    <a class="btn secundario" href="amostra-capitulo-1.pdf" target="_blank" rel="noopener">Abrir a amostra grátis</a>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>O que você recebe hoje</h2>
+  <div class="cartao">
+    <ul class="lista" style="margin-bottom:0">
+      <li>O guia completo em PDF: <strong>37 páginas</strong>, para ler no celular ou imprimir.</li>
+      <li>O <strong>checklist de 10 minutos por mês</strong>, em página separada para imprimir.</li>
+      <li>O <strong>cartão da família</strong> com a palavra-código, para deixar na geladeira.</li>
+      <li>Acesso ao arquivo atualizado quando a Samsung mudar o menu.</li>
+    </ul>
+  </div>
+  <p class="mini cinza">Entrega na hora, pela área de membros da Kiwify e por e-mail. Não precisa instalar nada.</p>
+</section>
+
+<section class="wrap">
+  <div class="cartao centro">
+    <h2>Quanto custa</h2>
+    <div class="valor"><span class="de">R$ 29,90</span><span class="por">R$ 14<span class="centavos">,90</span></span></div>
+    <p class="mini cinza">Pagamento único, sem assinatura. Menos que um lanche, para uma configuração que fica pronta em meia hora e não vence.</p>
+    <a class="btn" href="https://pay.kiwify.com.br/b4lyF2h">Quero o guia agora</a>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="garantia">
+    <h2>Sete dias de garantia</h2>
+    <p>Se não servir, você pede o dinheiro de volta pela Kiwify e fica com o arquivo. Sem discussão.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Dúvidas de quem está quase comprando</h2>
+
+  <details><summary>Preciso entender de celular?</summary>
+  <p>Não. Cada passo diz o nome do menu como aparece na tela, e a ordem dos toques.</p></details>
+
+  <details><summary>Serve para o celular da minha mãe, que é antigo?</summary>
+  <p>Serve. Nada do que o guia pede exige aparelho novo.</p></details>
+
+  <details><summary>É curso em vídeo?</summary>
+  <p>Não. É um PDF para ler e usar, com uma parte “Faça agora” em cada capítulo.</p></details>
+
+  <details><summary>Como eu recebo?</summary>
+  <p>O acesso chega no seu e-mail logo depois da compra, junto com o link do PDF. Dá para baixar e mandar no WhatsApp da sua mãe.</p></details>
+
+  <details><summary>Serve para iPhone?</summary>
+  <p>O guia é feito para Samsung primeiro, com o caminho resumido do iPhone. Se o celular da sua família é iPhone, espere o guia próprio — eu aviso.</p></details>
+
+  <details><summary>É seguro pagar aqui?</summary>
+  <p>O pagamento é processado pela Kiwify, com Pix, boleto ou cartão. O site nunca vê os dados do seu cartão.</p></details>
+</section>
+
+<section class="wrap">
+  <h2>Você não consegue impedir o golpista de ligar.<br>Consegue impedir que ele consiga alguma coisa.</h2>
+  <a class="btn" href="https://pay.kiwify.com.br/b4lyF2h" style="margin-top:10px">Blindar o celular do meu pai — R$ 14,90</a>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#e9edeb">Celular Blindado</strong> — guia de segurança para gente comum.</p>
+    <p>Dúvida antes de comprar? Fale comigo: <a href="mailto:arivanderlei@gmail.com">arivanderlei@gmail.com</a></p>
+    <p>Este material é informativo e não substitui orientação do seu banco. Em caso de golpe, procure o banco imediatamente e registre boletim de ocorrência.</p>
+  </div>
+</footer>
+
+<div class="barra">
+  <div class="wrap" style="padding:0">
+    <p class="rotulo">R$ 14,90 · pagamento único · garantia de 7 dias</p>
+    <a class="btn" href="https://pay.kiwify.com.br/b4lyF2h">Quero o guia</a>
+  </div>
+</div>
+
+</body>
+</html>
